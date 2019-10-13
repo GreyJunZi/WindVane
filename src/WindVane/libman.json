@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "defaultDestination": "wwwroot/lib/",
+  "libraries": [
+    {
+      "library": "material-components-web@latest"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "gsap@2.1.3"
+    }
+  ]
+}
