@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Infrastructure", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Authentication", "src\WebSites\WindVane.Authentication\WindVane.Authentication.csproj", "{34C24AF5-915C-4219-AB38-E1CFE4E62703}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.API", "src\WebSites\WindVane.WebAPI\WindVane.API.csproj", "{9F12FEA0-BC99-4BFA-996F-AEA1F8A9DF9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.API", "src\WebSites\WindVane.API\WindVane.API.csproj", "{9F12FEA0-BC99-4BFA-996F-AEA1F8A9DF9F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane", "src\WindVane\WindVane.csproj", "{CDBF8D55-2AFD-4A4F-B18C-F0761C1A43F6}"
 EndProject
