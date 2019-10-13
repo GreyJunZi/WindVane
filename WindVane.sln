@@ -21,15 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Application", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Domain", "src\Domain\WindVane.Domain\WindVane.Domain.csproj", "{0ABB0787-1ED8-4634-9B8D-86ACEF860FB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.Core", "src\Core\WindVane.Core\WindVane.Core.csproj", "{C2B13072-3AD8-4696-B9D3-6E1F86F91A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Core", "src\Core\WindVane.Core\WindVane.Core.csproj", "{C2B13072-3AD8-4696-B9D3-6E1F86F91A60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.Infrastructure", "src\Infrastructure\WindVane.Infrastructure\WindVane.Infrastructure.csproj", "{3E757EFB-D949-4A1B-B32D-6C6E70FC4E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Infrastructure", "src\Infrastructure\WindVane.Infrastructure\WindVane.Infrastructure.csproj", "{3E757EFB-D949-4A1B-B32D-6C6E70FC4E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.Authentication", "src\WebSites\WindVane.Authentication\WindVane.Authentication.csproj", "{34C24AF5-915C-4219-AB38-E1CFE4E62703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Authentication", "src\WebSites\WindVane.Authentication\WindVane.Authentication.csproj", "{34C24AF5-915C-4219-AB38-E1CFE4E62703}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.WebAPI", "src\WebSites\WindVane.WebAPI\WindVane.WebAPI.csproj", "{9F12FEA0-BC99-4BFA-996F-AEA1F8A9DF9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.API", "src\WebSites\WindVane.WebAPI\WindVane.API.csproj", "{9F12FEA0-BC99-4BFA-996F-AEA1F8A9DF9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane", "src\WindVane\WindVane.csproj", "{CDBF8D55-2AFD-4A4F-B18C-F0761C1A43F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane", "src\WindVane\WindVane.csproj", "{CDBF8D55-2AFD-4A4F-B18C-F0761C1A43F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

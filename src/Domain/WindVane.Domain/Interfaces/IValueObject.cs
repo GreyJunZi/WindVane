@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WindVane.Domain.Interfaces
 {
-    public interface IRepository : IUnitOfWork, IDisposable
+    public interface IValueObject : IEntity
     {
     }
 }

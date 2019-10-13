@@ -1,6 +1,6 @@
 using System;
 
-namespace WindVane.WebAPI
+namespace WindVane.API
 {
     public class WeatherForecast
     {
