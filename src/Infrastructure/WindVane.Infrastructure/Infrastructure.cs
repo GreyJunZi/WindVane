@@ -2,7 +2,7 @@
 
 namespace WindVane.Infrastructure
 {
-    public class Class1
+    public class Infrastructure
     {
     }
 }
