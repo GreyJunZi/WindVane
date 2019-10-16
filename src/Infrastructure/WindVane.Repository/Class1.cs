@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WindVane.Domain
+namespace WindVane.Repository
 {
     public class Class1
     {

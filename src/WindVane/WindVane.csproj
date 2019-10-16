@@ -11,4 +11,10 @@
     <Folder Include="wwwroot\assets\images\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.0.0" />
+    <PackageReference Include="IdentityServer4" Version="3.0.1" />
+  </ItemGroup>
+
 </Project>
