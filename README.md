@@ -1,9 +1,9 @@
 <p align="center" class="has-mb-6">
-<h1 align="center">WindVine</h1>
-<br>  ASP.NET Core / EF Core / IdentityServer4 / Redis / EFK / DDD
+<img class="not-gallery-item" height="48" src="https://ppoffice.github.io/hexo-theme-icarus/images/logo.svg">
+<br> A simple, delicate, and modern theme for the static site generator Hexo.
 <br>
-<a href="">Preview</a> |
-<a href="">Documentation</a> |
-<a href="https://github.com/PseudoJunZi/WindVane/archive/master.zip">Download</a>
+<a href="https://ppoffice.github.io/hexo-theme-icarus/">Preview</a> |
+<a href="https://ppoffice.github.io/hexo-theme-icarus/categories/">Documentation</a> |
+<a href="https://github.com/ppoffice/hexo-theme-icarus/archive/master.zip">Download</a>
 <br>
 </p>
