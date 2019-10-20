@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindVane.Data.Models
 {
-    public class ApplicationRole : IdentityRole<Guid>
+    public class ApplicationUserLogin : IdentityUserLogin<Guid>
     {
     }
 }

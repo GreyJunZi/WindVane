@@ -6,10 +6,14 @@ using IdentityServer4;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using WindVane.Data;
+using WindVane.Data.Models;
 
 namespace WindVane.Authentication
 {
@@ -20,8 +24,7 @@ namespace WindVane.Authentication
             Configuration = configuration;
         }
         public IConfiguration Configuration { get; }
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -30,17 +33,11 @@ namespace WindVane.Authentication
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApis())
                 .AddInMemoryClients(Config.GetClients())
-                .AddTestUsers(Config.GetUsers());
-            builder.AddDeveloperSigningCredential();
+                .AddTestUsers(Config.GetUsers())
+                .AddDeveloperSigningCredential();
 
             services.AddAuthentication()
-                .AddGitHub("GitHub", options =>
-                {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-
-                    options.ClientId = Configuration.GetSection("Authentication:GitHub:ClientId").Value;
-                    options.ClientSecret = Configuration.GetSection("Authentication:GitHub:ClientSecret").Value;
-                })
+                .AddCookie()
                 .AddOpenIdConnect("oidc", "OpenID Connect", options =>
                 {
                     options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
@@ -55,10 +52,77 @@ namespace WindVane.Authentication
                         NameClaimType = "name",
                         RoleClaimType = "role"
                     };
-                });
+                })
+                .AddJwtBearer("Jwt", options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = false,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = "",
+                        IssuerSigningKey = new SymmetricSecurityKey(new byte[10])
+                    };
+                })
+                .AddGoogle("Google", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:GitHub:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:GitHub:ClientSecret").Value;
+                })
+                .AddFacebook("Facebook", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:GitHub:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:GitHub:ClientSecret").Value;
+                })
+                .AddMicrosoftAccount("MicrosoftAccount", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:GitHub:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:GitHub:ClientSecret").Value;
+                })
+                .AddGitHub("GitHub", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:GitHub:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:GitHub:ClientSecret").Value;
+                })/*
+                .AddTwitter("Twitter", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ConsumerKey = Configuration.GetSection("Authentication:Twitter:ConsumerKey").Value;
+                    options.ConsumerSecret = Configuration.GetSection("Authentication:Twitter:ConsumerSecret").Value;
+                })
+                .AddDiscord("Discord", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:Discord:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:Discord:ClientSecret").Value;
+                })
+                .AddQQ("QQ", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:QQ:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:QQ:ClientSecret").Value;
+                })
+                .AddWeixin("Weixin", options =>
+                {
+                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                    options.ClientId = Configuration.GetSection("Authentication:Weixin:ClientId").Value;
+                    options.ClientSecret = Configuration.GetSection("Authentication:Weixin:ClientSecret").Value;
+                })*/;
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -74,7 +138,6 @@ namespace WindVane.Authentication
 
             app.UseAuthorization();
 
-            // uncomment, if you want to add an MVC-based UI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
