@@ -44,7 +44,7 @@ namespace WindVane.Data.Repository
             return await _dbSet.LongCountAsync();
         }
 
-        public async Task DisposeAsync()
+        public async Task Dispose()
         {
             await _dbContext.DisposeAsync();
             GC.SuppressFinalize(this);

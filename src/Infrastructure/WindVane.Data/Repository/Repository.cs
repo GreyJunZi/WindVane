@@ -151,7 +151,7 @@ namespace WindVane.Data.Repository
         }
 
 
-        public void DisposeAsync()
+        public void Dispose()
         {
             _dbContext?.Dispose();
             GC.SuppressFinalize(this);
