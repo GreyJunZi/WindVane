@@ -5,16 +5,17 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using WindVane.Data.Context;
+using WindVane.Domain.Entities;
 using WindVane.Domain.Interfaces;
 
 namespace WindVane.Data.Repository
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : IEntity
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {
-        protected WindVaneContext _dbContext { get; }
+        protected WindVaneDbContext _dbContext { get; }
         protected DbSet<TEntity> _dbSet { get; }
 
-        public Repository(WindVaneContext dbContext)
+        public Repository(WindVaneDbContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();

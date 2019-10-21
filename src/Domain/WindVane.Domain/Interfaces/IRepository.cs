@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using WindVane.Domain.Entities;
 
 namespace WindVane.Domain.Interfaces
 {
-    public interface IRepository<TEntity> : IDisposable where TEntity : IEntity
+    public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {
         void Add(TEntity entity);
         void Add(IEnumerable<TEntity> entities);

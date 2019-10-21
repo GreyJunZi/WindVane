@@ -10,10 +10,10 @@ namespace WindVane.Data.Repository
 {
     public class AsyncRepository<TEntity> : IAsyncRepository<TEntity> where TEntity : IEntity
     {
-        protected WindVaneContext _dbContext { get; }
+        protected WindVaneDbContext _dbContext { get; }
         protected DbSet<TEntity> _dbSet { get; }
 
-        public AsyncRepository(WindVaneContext dbContext)
+        public AsyncRepository(WindVaneDbContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();
@@ -44,9 +44,9 @@ namespace WindVane.Data.Repository
             return await _dbSet.LongCountAsync();
         }
 
-        public async Task Dispose()
+        public void Dispose()
         {
-            await _dbContext.DisposeAsync();
+            _dbContext.DisposeAsync();
             GC.SuppressFinalize(this);
         }
     }

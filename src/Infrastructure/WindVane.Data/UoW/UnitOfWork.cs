@@ -9,9 +9,9 @@ namespace WindVane.Data.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly WindVaneContext _dbContext;
+        private readonly WindVaneDbContext _dbContext;
 
-        public UnitOfWork(WindVaneContext dbContext)
+        public UnitOfWork(WindVaneDbContext dbContext)
         {
             _dbContext = dbContext;
         }

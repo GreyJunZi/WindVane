@@ -5,9 +5,9 @@ using System.Text;
 
 namespace WindVane.Data.Context
 {
-    public class WindVaneContext : DbContext
+    public class WindVaneDbContext : DbContext
     {
-        public WindVaneContext(DbContextOptions<WindVaneContext> options)
+        public WindVaneDbContext(DbContextOptions<WindVaneDbContext> options)
             : base(options)
         {
 
