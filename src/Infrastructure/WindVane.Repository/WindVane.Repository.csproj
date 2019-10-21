@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\WindVane.Domain\WindVane.Domain.csproj" />
+    <ProjectReference Include="..\WindVane.Data\WindVane.Data.csproj" />
+    <ProjectReference Include="..\WindVane.Infrastructure\WindVane.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

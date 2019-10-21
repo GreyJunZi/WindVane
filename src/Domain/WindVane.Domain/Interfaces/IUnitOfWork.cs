@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WindVane.Domain.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
 
         bool Commit();

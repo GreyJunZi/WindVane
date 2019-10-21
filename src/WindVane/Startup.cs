@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using WindVane.Data;
+using WindVane.Data.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace WindVane
 {

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace WindVane.Domain.Interfaces
 {
-    public interface IEntity : IEntity<Guid>
+    public abstract class IEntity : IEntity<Guid>
     {
 
     }
-    public interface IEntity<T>
+    public abstract class IEntity<T>
     {
         T Id { get; set; }
 

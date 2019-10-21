@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\WindVane.Domain\WindVane.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

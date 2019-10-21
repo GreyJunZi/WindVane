@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\WindVane.Domain\WindVane.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\WindVane.Data\WindVane.Data.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\WindVane.Infrastructure\WindVane.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
 </Project>
