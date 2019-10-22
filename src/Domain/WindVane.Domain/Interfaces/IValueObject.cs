@@ -4,7 +4,12 @@ using System.Text;
 
 namespace WindVane.Domain.Interfaces
 {
-    public interface IValueObject
+    public interface IValueObject : IValueObject<Guid>
     {
+    }
+
+    public interface IValueObject<T>
+    {
+        T Id { get; set; }
     }
 }

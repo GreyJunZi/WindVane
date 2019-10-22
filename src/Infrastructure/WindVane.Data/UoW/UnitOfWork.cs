@@ -16,6 +16,16 @@ namespace WindVane.Data.UoW
             _dbContext = dbContext;
         }
 
+        public void BeginTransaction()
+        {
+            _dbContext.Database.BeginTransaction();
+        }
+
+        public async Task BeginTransactionAsync()
+        {
+            await _dbContext.Database.BeginTransactionAsync();
+        }
+
         public bool Commit()
         {
             return _dbContext.SaveChanges() > 0;
@@ -24,6 +34,16 @@ namespace WindVane.Data.UoW
         public async Task<bool> CommitAsync()
         {
             return await _dbContext.SaveChangesAsync() > 0;
+        }
+
+        public void CommitTransaction()
+        {
+            _dbContext.Database.CommitTransaction();
+        }
+
+        public void RollbackTransaction()
+        {
+            _dbContext.Database.RollbackTransaction();
         }
 
         public void Dispose()
