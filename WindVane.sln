@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Data", "src\Infras
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Repository", "src\Infrastructure\WindVane.Repository\WindVane.Repository.csproj", "{80EE538A-988B-4391-83B1-7C3D4E433C9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.Authentication", "src\WebSites\WindVane.Authentication\WindVane.Authentication.csproj", "{8293AD0A-3B78-4D02-A09F-5B1F07DE0587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Authentication", "src\WebSites\WindVane.Authentication\WindVane.Authentication.csproj", "{8293AD0A-3B78-4D02-A09F-5B1F07DE0587}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
