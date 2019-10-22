@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Repository", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Authentication", "src\WebSites\WindVane.Authentication\WindVane.Authentication.csproj", "{8293AD0A-3B78-4D02-A09F-5B1F07DE0587}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.PiliPala", "src\WebSites\WindVane.PiliPala\WindVane.PiliPala.csproj", "{E9302D0C-C095-4565-BB92-1AADC351BB3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{8293AD0A-3B78-4D02-A09F-5B1F07DE0587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8293AD0A-3B78-4D02-A09F-5B1F07DE0587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8293AD0A-3B78-4D02-A09F-5B1F07DE0587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9302D0C-C095-4565-BB92-1AADC351BB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9302D0C-C095-4565-BB92-1AADC351BB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9302D0C-C095-4565-BB92-1AADC351BB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9302D0C-C095-4565-BB92-1AADC351BB3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{DA62DE15-2EE0-4C3A-856A-EBECE53F8801} = {C93DCCF4-F797-4C6F-A6B8-96ABFA818906}
 		{80EE538A-988B-4391-83B1-7C3D4E433C9D} = {C93DCCF4-F797-4C6F-A6B8-96ABFA818906}
 		{8293AD0A-3B78-4D02-A09F-5B1F07DE0587} = {385ABCF9-972A-45BF-93FB-9577EF1870CF}
+		{E9302D0C-C095-4565-BB92-1AADC351BB3C} = {385ABCF9-972A-45BF-93FB-9577EF1870CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A05CBA3-BD08-4ADF-870F-11D1ED3255FC}
