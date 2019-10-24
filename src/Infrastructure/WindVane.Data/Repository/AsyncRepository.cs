@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using WindVane.Data.Context;
 using WindVane.Domain.Entities;
 using WindVane.Domain.Interfaces;
 
@@ -11,10 +10,10 @@ namespace WindVane.Data.Repository
 {
     public class AsyncRepository<TEntity> : IAsyncRepository<TEntity> where TEntity : Entity
     {
-        protected WindVaneDbContext _dbContext { get; }
+        protected ApplicationDbContext _dbContext { get; }
         protected DbSet<TEntity> _dbSet { get; }
 
-        public AsyncRepository(WindVaneDbContext dbContext)
+        public AsyncRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();

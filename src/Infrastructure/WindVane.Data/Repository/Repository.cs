@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using WindVane.Data.Context;
 using WindVane.Domain.Entities;
 using WindVane.Domain.Interfaces;
 
@@ -12,10 +11,10 @@ namespace WindVane.Data.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {
-        protected WindVaneDbContext _dbContext { get; }
+        protected ApplicationDbContext _dbContext { get; }
         protected DbSet<TEntity> _dbSet { get; }
 
-        public Repository(WindVaneDbContext dbContext)
+        public Repository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();
