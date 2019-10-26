@@ -91,12 +91,6 @@
   - Serilog
   
   - NLog
-  
-  - Log4Net
-  
-  - xUnit
-  
-  - MSTest
 
 - 消息队列
   
@@ -192,6 +186,34 @@
 
 - 敏捷开发
 
+参考开源项目
+
+- [nopCommerce](https://github.com/nopSolutions/nopCommerce)
+
+- [SimplCommerce](https://github.com/simplcommerce/SimplCommerce)
+
+- [EquinoxProject](https://github.com/EduardoPires/EquinoxProject)
+
+- [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
+
+- [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
+
+- [OrchardCore](https://github.com/OrchardCMS/OrchardCore)
+
+- [DotNetCoreArchitecture](https://github.com/rafaelfgx/DotNetCoreArchitecture)
+
+- [EventFlow](https://github.com/eventflow/EventFlow)
+
+- [NEventStore](https://github.com/NEventStore/NEventStore)
+
+- [NorthwindTraders](https://github.com/JasonGT/NorthwindTraders)
+
+- [cloudscribe](https://github.com/cloudscribe/cloudscribe)
+
+- [coolstore-microservices](https://github.com/vietnam-devs/coolstore-microservices)
+
 ## 许可证
 
 风向标已获得 MIT 许可.
+
+
