@@ -1,7 +1,7 @@
 <h1 align="center">WindVane</h1>
 <p align="center" class="has-mb-6">
     <br>
-     a free open source web project architecture based on .NET Core 3.0
+     a free open source micro-services architecture based on .NET Core 3.0
     <br>
     <a href="javascript:;">Preview</a> |
     <a href="javascript:;">Documentation</a> |
