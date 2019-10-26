@@ -181,18 +181,6 @@
 
 - Devops
 
-## Layers
-
-- **Application**: 
-
-- **Core**:
-
-- **Domain**:
-
-- **Infrastructure**:
-
-- **WebSites**:
-
 ## License
 
 WindVane is licensed under the MIT license.

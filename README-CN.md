@@ -190,17 +190,7 @@
 
 - 敏捷开发
 
-## 层
 
-- **Application**:应用服务层
-
-- **Core**:核心层
-
-- **Domain**:领域层
-
-- **Infrastructure**:基础设施层
-
-- **WebSites**:
 
 ## 许可证
 
