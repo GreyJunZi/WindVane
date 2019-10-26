@@ -1,7 +1,7 @@
 <h1 align="center">风向标</h1>
 <p align="center" class="has-mb-6">
     <br>
-        基于 .NET Core 3.0 的免费开源 web 架构
+        基于 .NET Core 3.0 的免费开源 微服务 架构
     <br>
     <a href="javascript:;">预览</a> |
     <a href="javascript:;">文档</a> |
