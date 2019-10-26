@@ -47,16 +47,52 @@
   - Entity Framework Core 3.0
   - Dapper
 
+- 映射框架
+  
+  - AutoMapper
+
 - 数据库
   
   - 关系型数据库
+    
     - Microsoft SQL Server
     - MySQL
     - PostgreSQL
     - Oracle
+  
   - 非关系型数据库
+    
     - MongoDB
+    
     - Redis
+
+- 熔断降级
+  
+  - Polly
+
+- 任务调度
+  
+  - HangFire
+  
+  - Quartz.NET
+
+- 依赖注入
+  
+  - Autofac
+  
+  - .NET Core Native DI
+
+- 发布/订阅
+  
+  - MediatR
+
+- 日志
+  
+  - Serilog
+  
+  - NLog
+  
+  - Log4Net
 
 - 消息队列
   
@@ -66,12 +102,22 @@
   
   - Elastic Search
 
+- 即时通讯
+  
+  - SignalR
+  
+  - WebSocket
+  
+  - WebRTC
+
 - 日志分析系统
   
   - EFK
     - Elastic Search
     - Fluentd
     - Kibana
+
+- 
 
 - 前端
   

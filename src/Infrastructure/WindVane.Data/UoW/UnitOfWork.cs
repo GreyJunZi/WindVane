@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using WindVane.Data.Context;
 using WindVane.Domain.Interfaces;
 
 namespace WindVane.Data.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly WindVaneDbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
 
-        public UnitOfWork(WindVaneDbContext dbContext)
+        public UnitOfWork(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
