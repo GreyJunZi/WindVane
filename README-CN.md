@@ -93,6 +93,10 @@
   - NLog
   
   - Log4Net
+  
+  - xUnit
+  
+  - MSTest
 
 - 消息队列
   
@@ -116,8 +120,6 @@
     - Elastic Search
     - Fluentd
     - Kibana
-
-- 
 
 - 前端
   
@@ -189,8 +191,6 @@
 - 日志
 
 - 敏捷开发
-
-
 
 ## 许可证
 

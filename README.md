@@ -129,7 +129,7 @@
     - Semantic-UI
     - Foundation
 
-- Publish/Deply
+- Publish/Deploy
   
   - Server
     
