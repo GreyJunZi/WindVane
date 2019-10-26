@@ -5,8 +5,7 @@
     <br>
     <a href="javascript:;">Preview</a> |
     <a href="javascript:;">Documentation</a> |
-    <a href="https://github.com/PseudoJunZi/WindVane/archive/master.zip">
-        Download
+    <a href="https://github.com/PseudoJunZi/WindVane/archive/master.zip">   Download
     </a>
     <br>
     English / <a href="./README-CN.md">中文</a>
@@ -33,16 +32,21 @@
 ## Technologies
 
 - .NET Core 3.0
+  
   - ASP.NET Core MVC
   - ASP.NET Core WebAPI
   - ASP.NET Core Blazor
   - ASP.NET Core React
   - ASP.NET Core Angular
   - ASP.NET Core ABP
+
 - Object/Relation Mapping (ORM)
+  
   - Entity Framework Core 3.0
   - Dapper
+
 - DataBase
+  
   - Relational DataBase
     - Microsoft SQL Server
     - MySQL
@@ -51,16 +55,24 @@
   - NoSQL
     - MongoDB
     - Redis
+
 - Message Queue
+  
   - RabbitMQ
+
 - Search Engine
+  
   - Elastic Search
+
 - Log Analysis System
+  
   - EFK
     - Elastic Search
     - Fluentd
     - Kibana
+
 - Front-End
+  
   - JavaScript
     
     - jQuery
@@ -77,23 +89,28 @@
     - Element-UI
     - Semantic-UI
     - Foundation
+
 - Publish/Deply
+  
   - Server
+    
     - Apache
     - Nginx
+  
   - Platform
+    
     - Windows
     - Linux
     - MacOS
     - Android 
     - IOS
     - WeChat
+  
   - Container
+    
     - Docker
     
     - Kubernetes(k8s)
-    
-    
 
 ## Practices
 
@@ -125,8 +142,6 @@
 
 - Devops
 
-
-
 ## Layers
 
 - **Application**: 
@@ -138,8 +153,6 @@
 - **Infrastructure**:
 
 - **WebSites**:
-
-
 
 ## Docs
 
