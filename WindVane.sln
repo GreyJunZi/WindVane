@@ -49,9 +49,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{6CDEF92A-963A-4354-8A8D-E4DA5E2ACB0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.Payment.API", "src\Services\Payment\WindVane.Payment.API\WindVane.Payment.API.csproj", "{141703A7-9882-42E5-951A-2BCC7F00A29D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.Payment.API", "src\Services\Payment\WindVane.Payment.API\WindVane.Payment.API.csproj", "{141703A7-9882-42E5-951A-2BCC7F00A29D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindVane.PiliPala.API", "src\Services\PiliPala\WindVane.PiliPala.API\WindVane.PiliPala.API.csproj", "{EBE53A48-0870-4994-9042-A9C10E679C16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.PiliPala.API", "src\Services\PiliPala\WindVane.PiliPala.API\WindVane.PiliPala.API.csproj", "{EBE53A48-0870-4994-9042-A9C10E679C16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.PiliPala.Domain", "src\Services\PiliPala\WindVane.PiliPala.Domain\WindVane.PiliPala.Domain.csproj", "{5B1219A5-DA14-45BF-9FB9-1BDF0EBFA044}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.PiliPala.Application", "src\Services\PiliPala\WindVane.PiliPala.Application\WindVane.PiliPala.Application.csproj", "{EFB8D6F7-48ED-4636-8A62-28D419979368}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindVane.PiliPala.Infrastructure", "src\Services\PiliPala\WindVane.PiliPala.Infrastructure\WindVane.PiliPala.Infrastructure.csproj", "{68F4D39E-0734-4BEF-8AD2-B2DF7D51BD81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +109,18 @@ Global
 		{EBE53A48-0870-4994-9042-A9C10E679C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBE53A48-0870-4994-9042-A9C10E679C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBE53A48-0870-4994-9042-A9C10E679C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1219A5-DA14-45BF-9FB9-1BDF0EBFA044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1219A5-DA14-45BF-9FB9-1BDF0EBFA044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1219A5-DA14-45BF-9FB9-1BDF0EBFA044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1219A5-DA14-45BF-9FB9-1BDF0EBFA044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB8D6F7-48ED-4636-8A62-28D419979368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB8D6F7-48ED-4636-8A62-28D419979368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB8D6F7-48ED-4636-8A62-28D419979368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB8D6F7-48ED-4636-8A62-28D419979368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F4D39E-0734-4BEF-8AD2-B2DF7D51BD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F4D39E-0734-4BEF-8AD2-B2DF7D51BD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F4D39E-0734-4BEF-8AD2-B2DF7D51BD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F4D39E-0734-4BEF-8AD2-B2DF7D51BD81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +149,9 @@ Global
 		{6CDEF92A-963A-4354-8A8D-E4DA5E2ACB0B} = {B5CD5D0D-3306-4BCD-932B-7B723C270411}
 		{141703A7-9882-42E5-951A-2BCC7F00A29D} = {6CDEF92A-963A-4354-8A8D-E4DA5E2ACB0B}
 		{EBE53A48-0870-4994-9042-A9C10E679C16} = {522CCA3C-A7E9-4D96-867A-772BE3CA6BB6}
+		{5B1219A5-DA14-45BF-9FB9-1BDF0EBFA044} = {522CCA3C-A7E9-4D96-867A-772BE3CA6BB6}
+		{EFB8D6F7-48ED-4636-8A62-28D419979368} = {522CCA3C-A7E9-4D96-867A-772BE3CA6BB6}
+		{68F4D39E-0734-4BEF-8AD2-B2DF7D51BD81} = {522CCA3C-A7E9-4D96-867A-772BE3CA6BB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A05CBA3-BD08-4ADF-870F-11D1ED3255FC}
