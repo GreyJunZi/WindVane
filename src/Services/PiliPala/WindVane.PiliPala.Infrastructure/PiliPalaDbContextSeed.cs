@@ -143,7 +143,7 @@ namespace WindVane.PiliPala.Infrastructure
 
                     IsPublished  = true,
                     DisplayOrder = 1200
-                },
+                }
             };
         }
 

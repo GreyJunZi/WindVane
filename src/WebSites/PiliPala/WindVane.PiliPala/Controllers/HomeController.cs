@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using WindVane.PiliPala.Application.Interfaces;
 using WindVane.PiliPala.Models;
 
 namespace WindVane.PiliPala.Controllers
@@ -12,15 +13,18 @@ namespace WindVane.PiliPala.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IMenuService _menuService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,
+                                            IMenuService menuService)
         {
             _logger = logger;
+            _menuService = menuService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_menuService.GetAll());
         }
 
         public IActionResult Privacy()

@@ -8,6 +8,11 @@ namespace WindVane.PiliPala.Domain.Models
 {
     public class Menu : Entity, IAggregateRoot
     {
+        public Menu()
+        {
+            Id = Guid.NewGuid();
+        }
+
         public string Name { get; set; }
         public string Link { get; set; }
         public string Icon { get; set; }
