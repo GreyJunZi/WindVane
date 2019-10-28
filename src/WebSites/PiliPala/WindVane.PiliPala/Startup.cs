@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,13 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WindVane.Domain.Interfaces;
-using WindVane.PiliPala.Application.Interfaces;
-using WindVane.PiliPala.Application.Services;
-using WindVane.PiliPala.Domain.Interfaces.Repositories;
 using WindVane.PiliPala.Extensions;
 using WindVane.PiliPala.Infrastructure;
-using WindVane.PiliPala.Infrastructure.Repositories;
 
 namespace WindVane.PiliPala
 {
@@ -37,10 +31,7 @@ namespace WindVane.PiliPala
             services.AddDbContext<PiliPalaDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IMenuService, MenuService>();
-            services.AddScoped<IMenuRepository, MenuRepository>();
-
-            services.AddAutoMapperSetup();
+            services.AddPiliPala();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
