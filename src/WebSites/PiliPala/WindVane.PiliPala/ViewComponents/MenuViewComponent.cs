@@ -18,7 +18,7 @@ namespace WindVane.PiliPala.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            return View(_menuService.GetAll());
+            return View(_menuService.GetMenus());
         }
     }
 }

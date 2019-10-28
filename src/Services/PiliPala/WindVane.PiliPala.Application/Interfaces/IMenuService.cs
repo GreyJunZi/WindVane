@@ -10,5 +10,6 @@ namespace WindVane.PiliPala.Application.Interfaces
     {
         IEnumerable<MenuViewModel> GetAll();
         MenuViewModel GetById(Guid Id);
+        IEnumerable<MenuViewModel> GetMenus();
     }
 }

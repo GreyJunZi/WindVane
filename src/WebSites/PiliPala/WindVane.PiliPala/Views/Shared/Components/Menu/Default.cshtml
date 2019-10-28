@@ -1,15 +1,14 @@
 ﻿@using WindVane.PiliPala.Application.ViewModels;
 @model IEnumerable<MenuViewModel>
-@{
-    ViewData["Title"] = "Default";
-}
 @if (Model.Any())
 {
-    foreach (var menu in Model)
-    {
-        <a class="nav-link" href="@menu.Link">
-            @menu.Name
-            <span class="badge badge-pill bg-light align-text-bottom">0</span>
-        </a>
-    }
+    <nav class="nav nav-underline justify-content-between">
+        @foreach (var menu in Model)
+        {
+            <a class="nav-link" href="@menu.Link">
+                @menu.Name
+                <span class="badge badge-pill bg-light align-text-bottom">0</span>
+            </a>
+        }
+    </nav>
 }

@@ -34,6 +34,14 @@ namespace WindVane.PiliPala.Application.Services
             return _mapper.Map<MenuViewModel>(_menuRepository.GetById(Id));
         }
 
+        public IEnumerable<MenuViewModel> GetMenus()
+        {
+            return _menuRepository.Query()
+                .Where(w => w.IsPublished)
+                .OrderBy(order => order.DisplayOrder)
+                .ProjectTo<MenuViewModel>(_mapper.ConfigurationProvider);
+        }
+
         public void Dispose()
         {
             Dispose(true);

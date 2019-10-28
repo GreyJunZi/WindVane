@@ -17,17 +17,17 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "动漫",
-                    Link="",
+                    Link="/Channel/Anime",
                     Icon = "",
                     Description = "",
 
-                    IsPublished  = true,
+                    IsPublished  = false,
                     DisplayOrder = 100
                 },
                 new Menu()
                 {
                     Name = "电影",
-                    Link="",
+                    Link="/Channel/Film",
                     Icon = "",
                     Description = "",
 
@@ -37,7 +37,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "电视剧",
-                    Link="",
+                    Link="/Channel/TV",
                     Icon = "",
                     Description = "",
 
@@ -47,7 +47,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "纪录片",
-                    Link="",
+                    Link="/Channel/Documentary",
                     Icon = "",
                     Description = "",
 
@@ -57,7 +57,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "体育",
-                    Link="",
+                    Link="/Channel/PhysicalEducation",
                     Icon = "",
                     Description = "",
 
@@ -67,7 +67,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "军事",
-                    Link="",
+                    Link="/Channel/Military",
                     Icon = "",
                     Description = "",
 
@@ -77,7 +77,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "历史",
-                    Link="",
+                    Link="/Channel/History",
                     Icon = "",
                     Description = "",
 
@@ -87,7 +87,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "科技",
-                    Link="",
+                    Link="/Channel/Technology",
                     Icon = "",
                     Description = "",
 
@@ -97,7 +97,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "编程",
-                    Link="",
+                    Link="/Channel/Program",
                     Icon = "",
                     Description = "",
 
@@ -107,7 +107,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "游戏",
-                    Link="",
+                    Link="/Channel/Game",
                     Icon = "",
                     Description = "",
 
@@ -117,7 +117,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "原创",
-                    Link="",
+                    Link="/Channel/Original",
                     Icon = "",
                     Description = "",
 
@@ -127,7 +127,7 @@ namespace WindVane.PiliPala.Infrastructure
                 new Menu()
                 {
                     Name = "教育",
-                    Link="",
+                    Link="/Channel/Education",
                     Icon = "",
                     Description = "",
 
