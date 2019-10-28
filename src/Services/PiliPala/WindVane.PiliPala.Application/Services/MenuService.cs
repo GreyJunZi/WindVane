@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 using WindVane.PiliPala.Application.Interfaces;
 using WindVane.PiliPala.Application.ViewModels;
 using WindVane.PiliPala.Domain.Interfaces.Repositories;
@@ -24,7 +25,9 @@ namespace WindVane.PiliPala.Application.Services
         }
         public IEnumerable<MenuViewModel> GetAll()
         {
-            return _menuRepository.Query().ProjectTo<MenuViewModel>(_mapper.ConfigurationProvider);
+            return _menuRepository.Query()
+                .OrderBy(order => order.DisplayOrder)
+                .ProjectTo<MenuViewModel>(_mapper.ConfigurationProvider);
         }
         public MenuViewModel GetById(Guid Id)
         {

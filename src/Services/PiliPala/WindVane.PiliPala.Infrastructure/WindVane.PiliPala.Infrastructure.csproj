@@ -17,8 +17,4 @@
     <ProjectReference Include="..\WindVane.PiliPala.Domain\WindVane.PiliPala.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Configurations\" />
-  </ItemGroup>
-
 </Project>

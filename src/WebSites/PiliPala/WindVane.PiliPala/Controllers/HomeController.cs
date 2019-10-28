@@ -13,18 +13,15 @@ namespace WindVane.PiliPala.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IMenuService _menuService;
 
-        public HomeController(ILogger<HomeController> logger,
-                                            IMenuService menuService)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _menuService = menuService;
         }
 
         public IActionResult Index()
         {
-            return View(_menuService.GetAll());
+            return View();
         }
 
         public IActionResult Privacy()

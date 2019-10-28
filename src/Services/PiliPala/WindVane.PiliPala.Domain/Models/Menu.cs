@@ -11,6 +11,7 @@ namespace WindVane.PiliPala.Domain.Models
         public Menu()
         {
             Id = Guid.NewGuid();
+            Created = DateTime.Now;
         }
 
         public string Name { get; set; }

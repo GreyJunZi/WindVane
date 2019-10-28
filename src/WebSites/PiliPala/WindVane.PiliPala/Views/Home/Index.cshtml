@@ -1,21 +1,3 @@
-﻿@using WindVane.PiliPala.Application.ViewModels;
-@model IEnumerable<MenuViewModel>
-@{
+﻿@{
     ViewData["Title"] = "首页";
 }
-
-<div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-        @foreach (var item in Model)
-        {
-            <div class="dropdown">
-                <a class="p-2 text-muted dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:;">
-                    @item.Name
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">全部</a>
-                </div>
-            </div>
-        }
-    </nav>
-</div>

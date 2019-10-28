@@ -1,0 +1,297 @@
+﻿@{
+    ViewData["Title"] = "关于";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Hello, world!</h1>
+        <p>
+            “噼里啪啦”是一个视频网站。
+            主要包含动漫、电影、电视剧、纪录片、体育、军事、历史、科技、编程、游戏、原创、教育等视频板块。
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>
+        “风向标”中的每个系统都将提供出部分功能供其他系统使用。
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>主站</h2>
+        <p>
+            “风向标”主站系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+            前端采用 Google 公司的材料设计语言 Material Design 前端布局设计进行响应式页面开发。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44344" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>API系统</h2>
+        <p>
+            “风向标”API系统，基于 .NET Core 3.0 开发的 API 系统。
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。采用 RESTFul 风格开发API。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44355" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>身份认证系统</h2>
+        <p>
+            “风向标”身份认证系统，基于 .NET Core 3.0 开发的 Web 系统。
+            使用 IdentityServer4 对所有项目的用户进行统一身份认证与授权功能。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44366" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>支付系统</h2>
+        <p>
+            “风向标”支付系统，基于 .NET Core 3.0 开发的 Web 系统。
+            接入微信支付接口与支付宝支付接口，对所有项目的支付功能进行统一管理。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44377" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>社交系统</h2>
+        <p>
+            “风向标”社交系统，基于 .NET Core 3.0 开发的 Web 系统。
+            使用 SignalR 与 WebSocket 完成即时通讯功能，使用 WebRTC 完成视频通讯功能。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44301" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>聊天系统</h2>
+        <p>
+            “风向标”聊天系统，基于 .NET Core 3.0 开发的 Web 系统。
+            使用 SignalR 与 WebSocket 完成即时通讯功能，使用 WebRTC 完成视频通讯功能。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44302" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>博客系统</h2>
+        <p>
+            “风向标”博客系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44303" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>论坛系统</h2>
+        <p>
+            “风向标”论坛系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44304" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>音乐系统</h2>
+        <p>
+            “风向标”音乐系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44305" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>视频系统</h2>
+        <p>
+            “风向标”视频系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44306" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>地图系统</h2>
+        <p>
+            “风向标”地图系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44307" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>旅游系统</h2>
+        <p>
+            “风向标”旅游系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44308" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>物流系统</h2>
+        <p>
+            “风向标”物流系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44309" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>医疗系统</h2>
+        <p>
+            “风向标”医疗系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44310" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>酒店系统</h2>
+        <p>
+            “风向标”酒店系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44311" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>教育系统</h2>
+        <p>
+            “风向标”教育系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44312" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>运动系统</h2>
+        <p>
+            “风向标”运动系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44313" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>电商系统</h2>
+        <p>
+            “风向标”电商系统，基于 .NET Core 3.0 开发的 Web 系统。
+            数据库采用 Microsoft SQL Server 进行持久化管理，
+            采用领域驱动设计开发模式进行项目职责划分。
+            并加入 ElasticSearch 全文搜索引擎，提高搜索海量数据的查询效率。
+            加入 Redis 进行数据缓存，提高页面响应效率。
+        </p>
+        <p>
+            <a class="btn btn-secondary" role="button" asp-protocol="https" asp-host="localhost:44314" asp-controller="Home" asp-action="Index">
+                View details &raquo;
+            </a>
+        </p>
+    </div>
+</div>

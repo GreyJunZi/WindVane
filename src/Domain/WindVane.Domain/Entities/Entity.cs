@@ -7,6 +7,8 @@ namespace WindVane.Domain.Entities
 {
     public abstract class Entity : Entity<Guid>
     {
+        public DateTime? Created { get; protected set; }
+        public DateTime? Updated { get; protected set; }
     }
 
     public abstract class Entity<T> : IEntity<T>
