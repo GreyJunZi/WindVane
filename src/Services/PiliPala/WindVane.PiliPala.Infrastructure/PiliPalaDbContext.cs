@@ -21,7 +21,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Icon = "",
                     Description = "",
 
-                    IsPublished  = false,
+                    IsPublished  = true,
                     DisplayOrder = 100
                 },
                 new Menu()
