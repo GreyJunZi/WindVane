@@ -6,8 +6,9 @@ using WindVane.Domain.Interfaces;
 
 namespace WindVane.PiliPala.Domain.Models
 {
-    public class Film : Entity, IAggregateRoot
+    public class Category : Entity, IAggregateRoot
     {
+        public string Code { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
     }
