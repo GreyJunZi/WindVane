@@ -141,97 +141,133 @@ namespace WindVane.PiliPala.Infrastructure
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Anime",
                     Name = "动漫",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Anime",
+                    IsPublished = true,
+                    DisplayOrder = 1
                 },
                 new Category
                 {
                     Id  = Guid.NewGuid(),
 
-                    Code = "Film",
                     Name = "电影",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Film",
+                    IsPublished = true,
+                    DisplayOrder = 2
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "TV",
                     Name  = "电视剧",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/TV",
+                    IsPublished = true,
+                    DisplayOrder = 3
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Documentary",
                     Name = "记录片",
-                    Description  =""
+                    Description  ="",
+                    Icon = "",
+                    Link = "/Channel/Documentary",
+                    IsPublished = true,
+                    DisplayOrder =4
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "PhysicalEducation",
                     Name  ="体育",
-                    Description = ""
+                    Description = "",
+                    Icon  = "",
+                    Link= "/Channel/PhysicalEducation",
+                    IsPublished = true,
+                    DisplayOrder = 5
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Military",
                     Name ="军事",
-                    Description  =""
+                    Description  ="",
+                    Icon = "",
+                    Link = "/Channel/Military",
+                    IsPublished = true,
+                    DisplayOrder = 6
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "History",
                     Name = "历史",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link= "/Channel/History",
+                    IsPublished = true,
+                    DisplayOrder = 7
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Technology",
                     Name = "科技",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Technology",
+                    IsPublished = true,
+                    DisplayOrder = 8
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Program",
                     Name= "编程",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Program",
+                    IsPublished = true,
+                    DisplayOrder=9
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Game",
                     Name = "游戏",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Game",
+                    IsPublished = true,
+                    DisplayOrder = 10
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Original",
                     Name = "原创",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Original",
+                    IsPublished = true,
+                    DisplayOrder = 11
                 },
                 new Category
                 {
                     Id = Guid.NewGuid(),
 
-                    Code = "Education",
                     Name = "教育",
-                    Description = ""
+                    Description = "",
+                    Icon = "",
+                    Link = "/Channel/Education",
+                    IsPublished = true,
+                    DisplayOrder = 12
                 }
             });
         }

@@ -10,5 +10,11 @@ namespace WindVane.PiliPala.Domain.Models
     {
         public string Name { get; set; }
         public string Description { get; set; }
+
+        public Channel()
+        {
+            Id = Guid.NewGuid();
+            Created = DateTime.Now;
+        }
     }
 }

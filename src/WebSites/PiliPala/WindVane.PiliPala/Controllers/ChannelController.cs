@@ -14,6 +14,15 @@ namespace WindVane.PiliPala.Controllers
         }
 
         /// <summary>
+        /// 动画
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Anime()
+        {
+            return View();
+        }
+
+        /// <summary>
         /// 电影
         /// </summary>
         /// <returns></returns>

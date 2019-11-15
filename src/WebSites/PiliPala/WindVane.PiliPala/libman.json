@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "mediaelement@4.2.14",
+      "destination": "wwwroot/lib/mediaelement/"
+    },
+    {
+      "library": "mediaelement-plugins@2.5.0",
+      "destination": "wwwroot/lib/mediaelement-plugins/"
+    },
+    {
+      "library": "video.js@7.6.6",
+      "destination": "wwwroot/lib/videojs/"
+    }
+  ]
+}

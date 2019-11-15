@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MediaElement.js 3.0 - Plugins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        p {
+            margin: 0 15px;
+        }
+        .wrapper{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            padding: 0 15px;
+        }
+        .footer {
+            height: 50px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+            color: #000;
+        }
+        .columns{
+            display: flex;
+            flex:1;
+        }
+        .main{
+            flex: 1;
+            order: 2;
+        }
+        .sidebar-first{
+            width: 33%;
+            order: 1;
+        }
+        .sidebar-second{
+            width: 33%;
+            order: 3;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1><img src="https://cloud.githubusercontent.com/assets/910829/22357262/e6cf32b4-e404-11e6-876b-59afa009f65c.png"></h1>
+            <p>Following is the list of examples of the available plugins for MediaElement player</p>
+        </header>
+        <section class="content">
+            <div class="columns">
+                <main class="main">
+                    <ul>
+                        <li><a href="multiple1.html">Context Menu/Loop/Stop</a></li>
+                        <li><a href="playlist.html">Playlist</a></li>
+                        <li><a href="quality.html">Quality</a></li>
+                    </ul>
+                </main>
+                <aside class="sidebar-first">
+                    <ul>
+                        <li><a href="airplay.html">AirPlay</a></li>
+                        <li><a href="multiple2.html">Jump Forward/Skip Backward/Speed</a></li>
+                        <li><a href="postroll.html">Postroll</a></li>
+                    </ul>
+                </aside>
+
+                <aside class="sidebar-second">
+                    <ul>
+                        <li><a href="chromecast.html">Chromecast</a></li>
+                        <li><a href="markers.html">Markers</a></li>
+                        <li><a href="preview.html">Preview</a></li>
+                        <li><a href="vrview.html">VRView</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
