@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="IdentityModel" Version="4.1.0" />
+    <PackageReference Include="IdentityServer4" Version="3.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
@@ -17,6 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\assets\uploads\images\" />
+    <Folder Include="wwwroot\assets\uploads\videos\" />
     <Folder Include="wwwroot\assets\vendors\" />
     <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\assets\themes\" />

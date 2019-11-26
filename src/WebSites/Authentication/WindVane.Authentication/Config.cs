@@ -115,6 +115,30 @@ namespace WindVane.Authentication
                     },
 
                     AllowOfflineAccess = true
+                },
+
+                 new Client
+                {
+                    ClientId = "PiliPala",
+                    ClientName = "WindVane PiliPala",
+                    AllowedGrantTypes = GrantTypes.Hybrid,
+
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+
+                    RedirectUris           = { "https://localhost:44306/signin-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:44306/signout-callback-oidc" },
+
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
+                    },
+
+                    AllowOfflineAccess = true
                 }
             };
         }

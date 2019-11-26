@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "上传视频";
+}
+
+@section Styles {
+    <link href="~/lib/videojs/dist/video-js.min.css" rel="stylesheet" />
+}
+
+<div class="text-center">
+    <h1>上传视频</h1>
+    <div class="row">
+        <div class="input-group">
+            <div class="custom-file">
+                <input class="custom-file-input" id="file" name="file" type="file" accept="video/mp4" aria-describedby="file" multiple onchange="UploadVideos(event)">
+                <label class="custom-file-label" for="file">选择文件</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row mt-4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video class="video-js vjs-theme-sea" id="TemplateVideoPlayer" controls>
+                <source src="~/assets/uploads/videos/echo.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+    <div class="form-row mt-4" id="Videos"></div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="~/lib/videojs/dist/video.min.js"></script>
+    <script type="text/javascript" src="~/lib/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script type="text/javascript" src="~/lib/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            bsCustomFileInput.init();
+
+            VideoPlayer();
+        });
+
+        var VideoPlayer = function () {
+            var id = 'TemplateVideoPlayer';
+            videojs(id);
+        }
+
+        // 上传视频
+        var UploadVideos = function (e) {
+
+            // 获取所有文件
+            var files = e.target.files;
+
+            // 添加预览视频
+            var videos = document.getElementById('Videos');
+            var formData = new FormData();
+            for (let file of files) {
+                formData.append('files', file);
+
+                let video = document.createElement('video');
+                video.src = URL.createObjectURL(file);
+                video.controls = "controls";
+                video.muted = "muted";
+                video.style.width = "100%";
+                video.style.height = "100%";
+                video.style.objectFit = "fill";
+
+                let wrapper = document.createElement('div');
+                wrapper.classList.add('form-group', 'col-md-4');
+                wrapper.appendChild(video);
+
+                videos.appendChild(wrapper);
+
+            }
+
+            // 异步上传视频
+            axios.post('/Video/Upload', formData).then((res) => {
+                if (!res || !res.data) {
+                    return;
+                }
+            }).catch((err) => {
+
+            });
+        }
+    </script>
+}

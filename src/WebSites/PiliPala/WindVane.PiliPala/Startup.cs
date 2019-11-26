@@ -52,6 +52,7 @@ namespace WindVane.PiliPala
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

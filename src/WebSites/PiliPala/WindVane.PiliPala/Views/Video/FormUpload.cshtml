@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "上传视频";
+}
+
+<div class="text-center">
+    <h1>上传视频</h1>
+    <form asp-controller="Video" asp-action="Upload" enctype="multipart/form-data" method="post">
+        <div class="input-group">
+            <div class="custom-file">
+                <input type="file" name="file" class="custom-file-input" id="file" aria-describedby="file">
+                <label class="custom-file-label" for="file">选择文件</label>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="~/lib/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            bsCustomFileInput.init();
+        });
+    </script>
+}
