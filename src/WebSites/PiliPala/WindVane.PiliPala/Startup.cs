@@ -28,10 +28,7 @@ namespace WindVane.PiliPala
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<PiliPalaDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddPiliPala();
+            services.AddPiliPala(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

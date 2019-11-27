@@ -3,6 +3,24 @@
   "defaultProvider": "unpkg",
   "libraries": [
     {
+      "library": "bootstrap@4.4.0",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap.css.map",
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap.min.css.map",
+        "dist/js/bootstrap.js",
+        "dist/js/bootstrap.js.map",
+        "dist/js/bootstrap.min.js",
+        "dist/js/bootstrap.min.js.map",
+        "dist/js/bootstrap.bundle.js",
+        "dist/js/bootstrap.bundle.js.map",
+        "dist/js/bootstrap.bundle.min.js",
+        "dist/js/bootstrap.bundle.min.js.map"
+      ]
+    },
+    {
       "library": "mediaelement@4.2.14",
       "destination": "wwwroot/lib/mediaelement/"
     },
@@ -12,7 +30,23 @@
     },
     {
       "library": "video.js@7.7.1",
-      "destination": "wwwroot/lib/videojs/"
+      "destination": "wwwroot/lib/videojs/",
+      "files": [
+        "dist/video-js.css",
+        "dist/video-js.min.css",
+        "dist/video.js",
+        "dist/video.min.js"
+      ]
+    },
+    {
+      "library": "@videojs/themes@1.0.0",
+      "destination": "wwwroot/lib/videojs/themes/",
+      "files": [
+        "dist/city/index.css",
+        "dist/fantasy/index.css",
+        "dist/forest/index.css",
+        "dist/sea/index.css"
+      ]
     },
     {
       "provider": "jsdelivr",

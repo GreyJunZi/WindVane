@@ -7,7 +7,7 @@ namespace WindVane.PiliPala.Application.AutoMapper
 {
     public class AutoMapperConfig
     {
-        public static MapperConfiguration GetMapperConfiguration()
+        public static MapperConfiguration RegisterMapperConfiguration()
         {
             return new MapperConfiguration(cfg =>
             {

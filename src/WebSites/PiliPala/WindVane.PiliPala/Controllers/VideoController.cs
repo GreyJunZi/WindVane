@@ -61,6 +61,9 @@ namespace WindVane.PiliPala.Controllers
         }
 
         [HttpGet]
-        public IActionResult FormUpload() => View();
+        public IActionResult Preview() => View();
+
+        [HttpGet]
+        public IActionResult VideoUpload() => View();
     }
 }

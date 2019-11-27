@@ -3,7 +3,8 @@
 }
 
 @section Styles {
-
+    <link href="~/lib/videojs/dist/video-js.min.css" rel="stylesheet" />
+    <link href="~/lib/videojs/themes/dist/sea/index.css" rel="stylesheet" />
 }
 
 <div class="text-center">
@@ -16,18 +17,33 @@
             </div>
         </div>
     </div>
+
+    <div class="form-row mt-4">
+        <video class="video-js vjs-theme-sea" id="TemplateVideoPlayer" controls>
+            <source src="~/assets/uploads/videos/echo.mp4" type="video/mp4" />
+        </video>
+    </div>
     <div class="form-row mt-4" id="Videos"></div>
 </div>
 
 @section Scripts {
+    <script type="text/javascript" src="~/lib/videojs/dist/video.min.js"></script>
     <script type="text/javascript" src="~/lib/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script type="text/javascript" src="~/lib/axios/dist/axios.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             bsCustomFileInput.init();
+
+            VideoPlayer();
         });
 
+        var VideoPlayer = function () {
+            var id = 'TemplateVideoPlayer';
+            videojs(id);
+        }
+
         // 上传视频
-        var UploadVideos = async function (e) {
+        var UploadVideos = function (e) {
 
             // 获取所有文件
             var files = e.target.files;
@@ -55,15 +71,13 @@
             }
 
             // 异步上传视频
-            const response = await fetch('/Video/Upload', {
-                method: 'POST',
-                body: formData
-            }).then((res) => {
-                console.log(res);
+            axios.post('/Video/Upload', formData).then((res) => {
+                if (!res || !res.data) {
+                    return;
+                }
             }).catch((err) => {
-                console.log(err);
+
             });
-            console.log(response);
         }
     </script>
 }
