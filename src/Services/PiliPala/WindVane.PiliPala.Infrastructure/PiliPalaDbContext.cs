@@ -12,130 +12,6 @@ namespace WindVane.PiliPala.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Menu>().HasData(new Menu[] {
-
-                new Menu()
-                {
-                    Name = "动漫",
-                    Link="/Channel/Anime",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 100
-                },
-                new Menu()
-                {
-                    Name = "电影",
-                    Link="/Channel/Film",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 200
-                },
-                new Menu()
-                {
-                    Name = "电视剧",
-                    Link="/Channel/TV",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 300
-                },
-                new Menu()
-                {
-                    Name = "纪录片",
-                    Link="/Channel/Documentary",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 400
-                },
-                new Menu()
-                {
-                    Name = "体育",
-                    Link="/Channel/PhysicalEducation",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 500
-                },
-                new Menu()
-                {
-                    Name = "军事",
-                    Link="/Channel/Military",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 600
-                },
-                new Menu()
-                {
-                    Name = "历史",
-                    Link="/Channel/History",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 700
-                },
-                new Menu()
-                {
-                    Name = "科技",
-                    Link="/Channel/Technology",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 800
-                },
-                new Menu()
-                {
-                    Name = "编程",
-                    Link="/Channel/Program",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 900
-                },
-                new Menu()
-                {
-                    Name = "游戏",
-                    Link="/Channel/Game",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 1000
-                },
-                new Menu()
-                {
-                    Name = "原创",
-                    Link="/Channel/Original",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 1100
-                },
-                new Menu()
-                {
-                    Name = "教育",
-                    Link="/Channel/Education",
-                    Icon = "",
-                    Description = "",
-
-                    IsPublished  = true,
-                    DisplayOrder = 1200
-                }
-            });
-
             modelBuilder.Entity<Category>().HasData(new Category[] {
                 new Category
                 {
@@ -144,7 +20,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "动漫",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Anime",
+                    Link = "/Category/Anime",
                     IsPublished = true,
                     DisplayOrder = 1
                 },
@@ -155,7 +31,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "电影",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Film",
+                    Link = "/Category/Film",
                     IsPublished = true,
                     DisplayOrder = 2
                 },
@@ -166,7 +42,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name  = "电视剧",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/TV",
+                    Link = "/Category/TV",
                     IsPublished = true,
                     DisplayOrder = 3
                 },
@@ -177,7 +53,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "记录片",
                     Description  ="",
                     Icon = "",
-                    Link = "/Channel/Documentary",
+                    Link = "/Category/Documentary",
                     IsPublished = true,
                     DisplayOrder =4
                 },
@@ -188,7 +64,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name  ="体育",
                     Description = "",
                     Icon  = "",
-                    Link= "/Channel/PhysicalEducation",
+                    Link= "/Category/PhysicalEducation",
                     IsPublished = true,
                     DisplayOrder = 5
                 },
@@ -199,7 +75,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name ="军事",
                     Description  ="",
                     Icon = "",
-                    Link = "/Channel/Military",
+                    Link = "/Category/Military",
                     IsPublished = true,
                     DisplayOrder = 6
                 },
@@ -210,7 +86,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "历史",
                     Description = "",
                     Icon = "",
-                    Link= "/Channel/History",
+                    Link= "/Category/History",
                     IsPublished = true,
                     DisplayOrder = 7
                 },
@@ -221,7 +97,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "科技",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Technology",
+                    Link = "/Category/Technology",
                     IsPublished = true,
                     DisplayOrder = 8
                 },
@@ -232,7 +108,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name= "编程",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Program",
+                    Link = "/Category/Program",
                     IsPublished = true,
                     DisplayOrder=9
                 },
@@ -243,7 +119,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "游戏",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Game",
+                    Link = "/Category/Game",
                     IsPublished = true,
                     DisplayOrder = 10
                 },
@@ -254,7 +130,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "原创",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Original",
+                    Link = "/Category/Original",
                     IsPublished = true,
                     DisplayOrder = 11
                 },
@@ -265,7 +141,7 @@ namespace WindVane.PiliPala.Infrastructure
                     Name = "教育",
                     Description = "",
                     Icon = "",
-                    Link = "/Channel/Education",
+                    Link = "/Category/Education",
                     IsPublished = true,
                     DisplayOrder = 12
                 }

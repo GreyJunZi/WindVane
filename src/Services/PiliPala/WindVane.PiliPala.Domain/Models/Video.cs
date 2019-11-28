@@ -8,14 +8,13 @@ namespace WindVane.PiliPala.Domain.Models
 {
     public class Video : Entity, IAggregateRoot
     {
-        public Guid CategoryId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-
         public Video()
         {
             Id = Guid.NewGuid();
             Created = DateTime.Now;
         }
+        public Guid CategoryId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
