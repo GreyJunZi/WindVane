@@ -92,7 +92,7 @@ namespace WindVane.Authentication
 
                     options.ClientId = Configuration.GetSection("Authentication:GitHub:ClientId").Value;
                     options.ClientSecret = Configuration.GetSection("Authentication:GitHub:ClientSecret").Value;
-                })/*
+                })
                 .AddTwitter("Twitter", options =>
                 {
                     options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
@@ -120,7 +120,7 @@ namespace WindVane.Authentication
 
                     options.ClientId = Configuration.GetSection("Authentication:Weixin:ClientId").Value;
                     options.ClientSecret = Configuration.GetSection("Authentication:Weixin:ClientSecret").Value;
-                })*/;
+                });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
